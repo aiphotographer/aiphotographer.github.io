@@ -1,0 +1,207 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a dark theme to the body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Style the header and navigation */
+header {
+    background-color: #1a1a1a;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+.introduction {
+    text-align: center;
+    padding: 50px;
+}
+
+.introduction h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.introduction p {
+    margin-bottom: 20px;
+}
+
+.btn-explore {
+    background-color: #0a84ff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-explore:hover {
+    background-color: #005ecb;
+}
+
+/* Card styles for features */
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px; /* Set a fixed width for cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer styles */
+footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #0a84ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+.feature-image {
+    max-width: 100%; /* Maximum width image can take */
+    max-height: 200px; /* Maximum height you want to set for the image */
+    width: auto; /* Scales the width proportionally */
+    height: auto; /* Scales the height proportionally */
+    display: block; /* Removes any extra space below the image */
+    margin: 0 auto; /* Centers the image in the card if it's not full-width */
+    border-top-left-radius: 8px; /* Match the card's border radius on the top-left */
+    border-top-right-radius: 8px; /* Match the card's border radius on the top-right */
+}
+
+.card-title-link {
+    color: inherit; /* Keeps the inherited color, usually white for dark themes */
+    text-decoration: none; /* Removes the underline */
+    font-size: 1.2em; /* Increases the font size */
+    font-weight: bold; /* Makes the font bolder */
+    display: inline-block; /* Allows padding to take effect properly */
+    padding: 8px 0; /* Adds padding above and below the text */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.card-title-link:hover {
+    color: #0a84ff; /* Changes color on hover, choose a color that fits your theme */
+    text-decoration: underline; /* Adds an underline on hover */
+}
+
+/* Styles for the trivia button */
+/* Tech-themed trivia button styles */
+.trivia-button {
+    background-color: #007bff; /* Tech blue */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.trivia-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+}
+
+.trivia-button:before {
+    content: '\1F9BE'; /* Represents a robot emoji as an example */
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.search-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#searchInput {
+    padding: 10px;
+    width: 30%;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.like-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #ccc; /* Default color */
+}
+
+.like-button:hover, .like-button:focus {
+    color: #ff4466; /* Color on hover or when focused */
+}
+
+.liked {
+    color: #e63946; /* Color when liked */
+}
+
+#imageGallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+#imageGallery img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+
+#imageGallery img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+    border: 1px solid #ddd; /* light grey border */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* subtle shadow */
+}
